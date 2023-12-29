@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-    <title>Image Generation</title>
+    <title>GENPIXEL</title>
+    <link rel="icon" type="image/png" href="../static/images/G.png">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -19,7 +21,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
     
 </head>
-<body style="height: 100%; width: 100%; background-image: url('../static/images/bg.png'); background-size: cover; background-position: center; backdrop-filter: blur(30px);">
+<body style="height: 100%; width: 100%; background-image: url('../static/images/bg.png'); background-size: cover; background-position: center; backdrop-filter: blur(15px);">
 
     <div class="pb-5 p-2 " >
 
@@ -32,7 +34,7 @@
             
             <div class=" d-flex ">
                 <div data-aos="fade-down" data-aos-duration="2000" data-aos-delay="300" >
-                    <a href="{{ url_for('home') }}" > <button class="glow-on-hover px-3 py-1 border-0 text-light mx-1" style="background-color: #02616d; font-weight: 500;">Generation</button> </a> 
+                    <a href="{{ url_for('home') }}" > <button class="glow-on-hover px-3 py-1 border text-light mx-1" style="background-color: #02616d; font-weight: 500;">Generation</button> </a> 
                 </div>
 
                 <div data-aos="fade-down" data-aos-duration="2000" data-aos-delay="600">
@@ -44,10 +46,10 @@
     </div>
 
     <!-- Generation Part -->
-    <div style="height: auto;" class="border container rounded">
+    <div style="height: auto;" class="border container rounded" data-aos="fade-up" data-aos-duration="2000" >
         <div class="col-12 row d-flex justify-content-center  align-items-center p-0 m-0 ">
             <div class="col-lg-4 col-md-4 col-12 p-3  w-100">
-                <div>
+                <div >
                     <img src="../static/images/hero.png" width="100%" class="rounded" alt="">
                 </div>
             </div>
