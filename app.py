@@ -24,7 +24,7 @@ def plot_generated(examples, i):
 @app.route('/generate', methods=['POST'])
 def generate():
     n = request.form.get('n', type=int)
-    model = load_model('faces_generator_model_050.h5')
+    model = load_model('generator_model_050.h5')
     latent_points = generate_latent_points(100, n)
     X = model.predict(latent_points)
     X = (X + 1) / 2.0
